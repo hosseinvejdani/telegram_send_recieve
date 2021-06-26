@@ -57,13 +57,13 @@ def my_function(client, message):
                 fid = message['photo']["file_id"]
                 if not fid in file_ids:
                     file_ids.append(fid)
-                    app.send_cached_media('spinor_mag', file_id=fid, caption=capt,caption_entities=caption_entities)
+                    app.send_cached_media('SpinorMag', file_id=fid, caption=capt,caption_entities=caption_entities)
                 
             if message['video']!=None:
                 fid = message['video']["file_id"]
                 if not fid in file_ids:
                     file_ids.append(fid)
-                    app.send_cached_media('spinor_mag', file_id=fid, caption=capt,caption_entities=caption_entities)
+                    app.send_cached_media('SpinorMag', file_id=fid, caption=capt,caption_entities=caption_entities)
 
     
 
