@@ -18,7 +18,9 @@ def send_message(msg):
 # }
 # you shoud make a info.json in the main directory with
 # your own telegram account infos
-info = json.load('info.json')
+f = open('info.json',)
+info = json.load(f)
+f.close()
 api_id = info['api_id']
 api_hash = info['api_hash']
 phone = info['phone']
